@@ -91,6 +91,12 @@ NavMeshSettings:
     cellSize: 0.25
     accuratePlacement: 0
   m_NavMeshData: {fileID: 23800000, guid: 40329803cbe133f47b68f856043a1164, type: 2}
+--- !u!114 &181916142 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114724867697323830, guid: 7c0028835ce757a49b253e12105a522a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1576150495}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &258820406
 Prefab:
   m_ObjectHideFlags: 0
@@ -521,6 +527,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &1324241878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1324241873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 2013013300}
+  damageImage: {fileID: 181916142}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1001 &1576150495
 Prefab:
   m_ObjectHideFlags: 0
@@ -804,6 +828,19 @@ GameObject:
   m_PrefabParentObject: {fileID: 1510747115422650, guid: e1dd3baddca792a4f972718730b5a4fd,
     type: 2}
   m_PrefabInternal: {fileID: 1856557626}
+--- !u!114 &1856557628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856557627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.5
+  attackDamage: 10
 --- !u!114 &1856557630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,3 +923,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2013013300 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114069188927920710, guid: 7c0028835ce757a49b253e12105a522a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1576150495}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
